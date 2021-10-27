@@ -1,8 +1,12 @@
 # Study-web
-GDSC Ewha 웹기초 스터디 레포입니다.
-
 #### 🎈 <a href="https://www.notion.so/gdsc-ewha/2b3e8c31aa9c463a8fd992ffdba2859e">Notion</a>
 #### 🎈 <a href="https://gdscewha.tistory.com/">Team blog</a>
+
+## 스터디 방식
+
+- [생활코딩](https://www.youtube.com/channel/UCvc8kv-i5fvFTJBFAk6n1SA) 유튜브 강좌를 아래 커리큘럼에 따라 들으며 학습합니다.
+- 매주 학습한 내용을 문서에 정리하여 인증합니다. (닥스, 노션, 개인블로그 등 아무거나)
+- [Curriculum](https://www.notion.so/b84117da7dfc40979792a648b68f7935)
 ## Rules
 - 주 1회 화상으로 만나서, 1주간 배웠던 내용에 대한 scrum을 진행합니다.
 - 화상 스크럼 전날까지 과제를 노션에 제출합니다.
@@ -16,7 +20,6 @@ GDSC Ewha 웹기초 스터디 레포입니다.
     - 스터디 결석: 2,000원
 
 ## 대상
-
 - **개발이 처음**인 저학년 벗들
 - 기본 HTML도 제대로 배운 적 없어 웹이 늘 마음의 짐이었던 **앱 개발자**
 - 프론트 코드를 몰라 **API 통신**에 애를 먹었던 **백엔드 개발자**
