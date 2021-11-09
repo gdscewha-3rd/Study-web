@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Web2 - JavaScript</title>
+      <!--this를 넘겨주고 self로 받음-->
+      <script>
+        function nightDayHandler(self) {
+          var target = document.querySelector('body');
+          if (self.value === 'night') {
+            target.style.backgroundColor='black';
+            self.value = 'day';
+
+            var hlist = document.querySelectorAll('h1');
+            var i = 0;
+            while (i < hlist.length) {
+              hlist[i].style.color = 'powderblue';
+              i++;
+            }
+          }
+
+          else {
+            target.style.backgroundColor ='white';
+            self.value = 'night';
+
+            var hlist = document.querySelectorAll('h1');
+            var i = 0;
+            while (i < hlist.length) {
+              hlist[i].style.color = 'blue';
+              i++;
+            }
+          }
+        }
+      </script>
+  </head>
+  <body>
+    <h1>어두운 모드</h1>
+    <h1>밝은 모드</h1>
+      <input type= "button" value="night" onclick="
+      nightDayHandler(this);
+      ">
+  </body>
+</html>
