@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <input type="button" value="night" onclick="
+    var mybody = document.querySelector('body');
+    if(this.value === 'day')
+    {
+      mybody.style.backgroundColor = 'white';
+      mybody.style.color = 'black'
+      this.value = 'night';
+    }
+    else
+    {
+      mybody.style.backgroundColor = 'black';
+      mybody.style.color = 'white'
+      this.value = 'day'
+    }
+    " >
+    <br>
+    <h1>
+      Hello World!
+    </h1>
+
+  </body>
+</html>
