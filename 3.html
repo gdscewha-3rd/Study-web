@@ -1,23 +1,28 @@
 <!doctype html>
 <html>
   <head>
-    <title>WEB1-javascript</title>
+    <title>WEB1-javascript</title> 
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-REB93X68F4"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date()); 
+      gtag('js', new Date());
 
       gtag('config', 'G-REB93X68F4');
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="colors.js"></script>
   </head>
 
   <body>
     <h1><a href="index.html">WEB</a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+      nightDayHandler(this);
+    ">
     <div id="grid">
     <ol>
       <li><a href="1.html">HTML</a></li>
@@ -45,6 +50,21 @@
       semantics for text such as headings, paragraphs, lists, links, quotes and other
       items. HTML elements are delineated by tags, written using angle brackets.</p>
       <p>
+
+        <input type="button" value="night" onclick="
+        if (this.value==='night'){
+          document.querySelector('body').style.backgroundColor='black';
+          document.querySelector('body').style.color='white';
+          document.querySelector('a').style.color='white';
+          this.value='day'
+        }
+        else {
+          document.querySelector('body').style.backgroundColor='white';
+          document.querySelector('body').style.color='black';
+          document.querySelector('a').style.color='black';
+          this.value='night'
+        }
+        ">
       </div>
     </div>
         <div id="disqus_thread"></div>
