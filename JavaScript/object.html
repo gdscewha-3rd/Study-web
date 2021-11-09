@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Object</title>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+    <h2>Create</h2>
+    <script>
+        var family={
+            "mother":"Seonmi",
+            "father":"Hyeon",
+            'i1':'Yoonseo'
+    };
+    document.write("father :"+family.father+"<br>");
+    family.i2="Yoon-ji";
+    document.write("i2 : "+family.i2+"<br>");
+    family["our name"]="dotsfamily";
+    document.write("name : "+family["our name"]+"<br>");
+    </script>
+
+    <h2>Iterate</h2>
+    <script>
+        for(var key in famliy) {
+            document.write(key+"<br>");
+        }
+    </script>
+    
+</body>
+
+</html>
