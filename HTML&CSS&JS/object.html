@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var coworkers ={"programmer" :"egoing"
+                        ,"designer":"leezche"}
+
+        document.write("programmer :"+coworkers.programmer+"<br>"); 
+        document.write("designer :"+coworkers.designer+"<br>"); 
+        coworkers.developer="yeonleaf";
+        document.write(coworkers.developer+"<br>"); 
+        coworkers["frontend engineer"]="seoyeon"; 
+        document.write(coworkers["frontend engineer"]+"<br>");
+
+
+      
+
+        coworkers.showAll =function(){ 
+
+        for (var key in this){  //this는 함수가 포함된 객체 가리킴
+
+            document.write(key+" :" +this[key]+"<br>"); 
+        }
+        }
+        coworkers.showAll(); //객체 함수 호출
+     </script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+body{
+    margin:0;  
+    font-family: "Serif";      
+}
+
+h1{
+    font-size: 45px;
+   border-bottom:1px solid black;
+   padding: 20px; 
+   margin: 0;
+   display: block;
+  
+   text-align: left;
+   color: navy;
+ 
+     
+}
+
+#grid  ol{
+
+        color:black;
+
+     border-right:1px solid black;
+      width:100px;
+      text-align: left;
+      margin:0px;
+      padding:0;
+    
+      padding-right : 30px;
+      padding-top: 30px ;
+
+ }
+ 
+    a{
+
+        color: black;
+    }
+
+#grid{
+
+display: grid;
+grid-template-columns: 150px 1fr;
+padding-left: 30px;
+
+
+}
+
+#develog{
+
+text-align: right;
+padding-right: 20px;
+color: green;
+
+
+
+}
+@media (max-width :800px){/*화면크기가 800px이하일때*/
+
+#grid{
+
+display: block;
+
+}
+
+#grid  ol{
+
+     border-right:none;
+}
+
+h1{
+    border-bottom: none;
+
+
+}
+
+}

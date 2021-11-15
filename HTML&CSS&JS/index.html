@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title> WEB </title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="colors.js"></script>
+        <style> 
+        
+            a{
+               
+                text-decoration: underline;   
+                color:blue 
+            }
+            h1{
+                font-size: 45px;
+                text-align: center ;
+            }
+          #ver2{
+
+            text-align: right;
+
+          }
+          
+        </style>
+
+        
+
+    </head>
+
+    <body >
+
+       <h1>WEB</h1>
+       <input type ="button" value="night" onclick="
+       document.querySelector('body').style.backgroundColor= 'black';
+       document.querySelector('body').style.color= 'white';
+      ">
+       <input type ="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor= 'white';
+        document.querySelector('body').style.color= 'black';
+       ">
+
+        <input type ="button" value="night" onclick="
+        nightDayHandler(this);
+       ">
+       
+      
+
+       
+       <h2 style="text-align: center;">Welcome to web</h2>
+     
+       <p  id="ver2"> <a href="box.html"  >WEB 메인 ver.box</Ver></a></p>
+       
+        
+        <ol>
+            <li> <a href="1.html">HTML</a> </li>
+            <li> <a href="2.html">CSS </a> </li>
+            <li> <a href="3.html">JAVASCRIPT </a> </li>
+        </ol>
+
+        <img src="coding.jpg" width="50%">
+       
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        
+        <h2>web?</h2>
+
+        <p>The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may be interlinked by hyperlinks, and are accessible over the Internet.[1][2] The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by a software application called a web browser, and are published by a software application called a web server. The World Wide Web is not synonymous with the Internet, which pre-dated the Web in some form by over two decades and upon the technologies of which the Web is built.</p>
+             
+       
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://disqus-test-g2bgqbnbef.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </body>
+</html>
