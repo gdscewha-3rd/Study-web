@@ -13,7 +13,7 @@
 |1주차|10/13|HTML&CSS|`곽민소`|[📗](https://gdscewha.tistory.com/entry/%EC%9B%B9%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EC%B4%88-%EC%8A%A4%ED%84%B0%EB%94%941%EC%A3%BC%EC%B0%A8?category=969294)
 |2주차|11/3|Git|`구민정` `김경민`|[📗](https://gdscewha.tistory.com/entry/2%EC%A3%BC%EC%B0%A8-Git-Part1?category=969294) [📘](https://gdscewha.tistory.com/entry/2%EC%A3%BC%EC%B0%A8-Git-Part2?category=969294)
 |3주차|11/10|JavaScript|`김서연`|
-|4주차|11/17|NodeJS|`변지은` `서혜은`|
+|4주차|11/17|NodeJS|`변지은` `서혜은`|[📗](https://gdscewha.tistory.com/entry/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9-WEB2-Nodejs)
 |5주차|11/24|Databases|X|
 |6주차|12/1|MySQL|`원소윤`|
 |7주차||NodeJs & MySql|`이은우` `장서진`|
