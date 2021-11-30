@@ -25,5 +25,20 @@ module.exports = {
     }
     list = list+'</ul>';
     return list;
+  },authorSelect: function (authors,author_id){
+    var tag='<select name =author>';
+   
+    for (var i=0;i<authors.length;i++){
+      var selected='';
+      if (authors[i].id === author_id) {//저자들의 목록을 순차적으로 순회하면서 author_id(현재 우리가 선택한 수정페이지의 저자) 를 발견한다면
+        selected="selected"; //option 태그에 selected라는 문자열이 생길것. 
+      }
+  
+      tag+= `<option value = ${authors[i].id} ${selected}>${authors[i].name}</option>`; 
+
+    }
+    tag +=`</select>`;
+
+    return tag;
   }
 }
