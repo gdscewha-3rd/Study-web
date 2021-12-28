@@ -14,6 +14,7 @@ class App extends Component{
     this.state={
 
       mode:'read', // 현재 읽고있는 페이지
+      selected_content_id : 1, //현재 선택된 페이지 
       subject : {title : 'WEB', sub:'World wide Web!'},
       welcome : {title:'welcome', desc:"Hello, React!!"},
       contents :[
@@ -33,17 +34,29 @@ class App extends Component{
       _desc = this.state.welcome.desc;
     }
     else if(this.state.mode==='read'){
-      _title = this.state.contents[0].title;
-      _desc = this.state.contents[0].desc;
+
+      for(var i=0;i<this.state.contents.length;i++){
+        var data= this.state.contents[i];
+        if(data.id === this.state.selected_content_id){
+          _title = data.title;
+         _desc = data.desc;
+         break;
+        }
+      }
+     
     }
 
     return (
       <div className="App">
-       {/*<Subject 
+       <Subject 
        title={this.state.subject.title} 
-       sub={this.state.subject.sub}>
-       </Subject>*/}
-       <header>
+       sub={this.state.subject.sub}
+       onChangePage={function(){ //사용자 컴포넌트 이벤트
+         this.setState({mode :'welcome'});
+       }.bind(this)}>
+       </Subject>
+
+       {/*<header>
             <h1>
             <a href="/" onClick={function(e){
               console.log(e);
@@ -53,7 +66,10 @@ class App extends Component{
             </h1>
             {this.state.subject.sub}
          </header>
-       <TOC data={this.state.contents}></TOC>
+          */}
+       <TOC data={this.state.contents} onChangePage={function(id){
+         this.setState({mode : 'read', selected_content_id: Number(id) });
+       }.bind(this)}></TOC>
        <Content title={_title} desc={_desc}></Content>
       </div>
     )
